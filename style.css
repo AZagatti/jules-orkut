@@ -1,0 +1,207 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+a {
+    color: #0000CC;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Common Components */
+.box {
+    background-color: #E5ECF9;
+    border: 1px solid #C3D9FF;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.box h3 {
+    margin: 0 0 10px 0;
+    font-size: 13px;
+    color: #000000;
+    border-bottom: 1px solid #C3D9FF;
+    padding-bottom: 5px;
+}
+
+.box .view-all {
+    float: right;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+/* Header */
+#header {
+    background-color: #E5ECF9;
+    padding: 10px 20px;
+    border-bottom: 1px solid #C3D9FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #D14836;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    margin-right: 20px;
+    letter-spacing: -1px;
+}
+
+#header .nav a {
+    margin: 0 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#header .search input, #header .search select {
+    font-size: 12px;
+    padding: 2px;
+}
+
+/* Container */
+#container {
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    display: flex;
+    gap: 15px;
+}
+
+/* Layout */
+#left-column {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+#right-column {
+    flex-grow: 1;
+}
+
+/* Profile Picture Box */
+.profile-pic-box {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    background-color: #CCCCCC;
+    margin: 0 auto 10px auto;
+    border: 1px solid #999999;
+}
+
+.profile-name {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.profile-status {
+    color: #666666;
+    font-style: italic;
+}
+
+/* Nav Menu */
+.nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    padding: 5px 0;
+    border-bottom: 1px dashed #C3D9FF;
+}
+
+.nav-menu li:last-child {
+    border-bottom: none;
+}
+
+/* Profile Info */
+.info-row {
+    margin-bottom: 5px;
+}
+
+.info-row .label {
+    font-weight: bold;
+    display: inline-block;
+    width: 120px;
+    color: #666666;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #C3D9FF;
+    margin: 10px 0;
+}
+
+/* Grids (Friends, Communities) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: 10px;
+    text-align: center;
+}
+
+.grid-item {
+    font-size: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.grid-item .avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #DDDDDD;
+    margin: 0 auto 5px auto;
+    border: 1px solid #BBBBBB;
+}
+
+/* Scraps */
+.scrap {
+    background-color: #FFFFFF;
+    border: 1px solid #C3D9FF;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.scrap-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.scrap-date {
+    font-size: 10px;
+    color: #999999;
+    text-align: right;
+    margin-top: 5px;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #C3D9FF;
+    color: #666666;
+    font-size: 11px;
+    background-color: #E5ECF9;
+}

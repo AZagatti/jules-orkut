@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orkut - Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="logo-container">
+            <div class="logo">orkut</div>
+            <div class="nav">
+                <a href="#">Home</a> | <a href="#">Profile</a> | <a href="#">Scrapbook</a> | <a href="#">Communities</a> | <a href="#">Video</a>
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="search...">
+            <select>
+                <option>all orkut</option>
+                <option>users</option>
+                <option>communities</option>
+            </select>
+            <button>search</button>
+        </div>
+    </div>
+
+    <div id="container">
+        <!-- Left Column -->
+        <div id="left-column">
+            <div class="box profile-pic-box">
+                <div class="profile-pic"></div>
+                <div class="profile-name">John Doe</div>
+                <div class="profile-status">"Living the dream..."</div>
+            </div>
+
+            <div class="box nav-menu">
+                <ul>
+                    <li><a href="#">profile</a></li>
+                    <li><a href="#">scrapbook</a> (12)</li>
+                    <li><a href="#">photos</a> (45)</li>
+                    <li><a href="#">videos</a> (2)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div id="right-column">
+
+            <div class="box profile-info">
+                <h3>profile</h3>
+                <div class="info-row"><span class="label">social:</span> ★★★</div>
+                <div class="info-row"><span class="label">trustworthy:</span> 😃😃</div>
+                <div class="info-row"><span class="label">cool:</span> 🧊🧊🧊</div>
+
+                <hr>
+
+                <div class="info-row"><span class="label">name:</span> John Doe</div>
+                <div class="info-row"><span class="label">location:</span> New York, USA</div>
+                <div class="info-row"><span class="label">relationship status:</span> Single</div>
+            </div>
+
+            <div class="box grid-container">
+                <h3>friends (150) <a href="#" class="view-all">view all</a></h3>
+                <div class="grid">
+                    <div class="grid-item"><div class="avatar"></div>User</div>
+                    <div class="grid-item"><div class="avatar"></div>User</div>
+                    <div class="grid-item"><div class="avatar"></div>User</div>
+                    <div class="grid-item"><div class="avatar"></div>User</div>
+                    <div class="grid-item"><div class="avatar"></div>User</div>
+                    <div class="grid-item"><div class="avatar"></div>User</div>
+                </div>
+            </div>
+
+            <div class="box grid-container">
+                <h3>communities (42) <a href="#" class="view-all">view all</a></h3>
+                <div class="grid">
+                    <div class="grid-item"><div class="avatar"></div>Community</div>
+                    <div class="grid-item"><div class="avatar"></div>Community</div>
+                    <div class="grid-item"><div class="avatar"></div>Community</div>
+                    <div class="grid-item"><div class="avatar"></div>Community</div>
+                    <div class="grid-item"><div class="avatar"></div>Community</div>
+                    <div class="grid-item"><div class="avatar"></div>Community</div>
+                </div>
+            </div>
+
+            <div class="box scraps">
+                <h3>scrapbook <a href="#" class="view-all">view all</a></h3>
+                <div class="scrap">
+                    <div class="scrap-author"><a href="#">Jane Smith</a></div>
+                    <div class="scrap-content">Hey! Long time no see. How have you been?</div>
+                    <div class="scrap-date">yesterday</div>
+                </div>
+                <div class="scrap">
+                    <div class="scrap-author"><a href="#">Mike Johnson</a></div>
+                    <div class="scrap-content">Happy birthday man! Have a good one!</div>
+                    <div class="scrap-date">3 days ago</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer">
+        &copy; 2008 Google - <a href="#">About orkut</a> - <a href="#">Blog</a> - <a href="#">Developers</a> - <a href="#">Privacy</a> - <a href="#">Terms</a>
+    </div>
+</body>
+</html>
