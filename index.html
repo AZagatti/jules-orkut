@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>orkut - Profile</title>
+    <title>orkut - Perfil</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header">
-        <div class="logo-container">
-            <div class="logo">orkut</div>
-            <div class="nav">
-                <a href="#">Home</a> | <a href="#">Profile</a> | <a href="#">Scrapbook</a> | <a href="#">Communities</a> | <a href="#">Video</a>
+    <div id="header-wrapper">
+        <div id="header">
+            <div class="logo-container">
+                <div class="logo">
+                    <span class="orkut-logo">orkut</span>
+                </div>
             </div>
-        </div>
-        <div class="search">
-            <input type="text" placeholder="search...">
-            <select>
-                <option>all orkut</option>
-                <option>users</option>
-                <option>communities</option>
-            </select>
-            <button>search</button>
+            <div class="nav-top">
+                <a href="#">Início</a> <a href="#">Página de recados</a> <a href="#">Amigos</a> <a href="#">Comunidades</a>
+            </div>
+            <div class="user-area">
+                <span class="user-email">armandotobias@gmail.com</span> <a href="#" class="logout">Sair</a>
+            </div>
+            <div class="search-top">
+                <input type="text" value="pesquisa do orkut">
+                <button class="search-btn"><span class="search-icon">🔍</span></button>
+            </div>
         </div>
     </div>
 
@@ -30,79 +32,99 @@
         <div id="left-column">
             <div class="box profile-pic-box">
                 <div class="profile-pic"></div>
-                <div class="profile-name">John Doe</div>
-                <div class="profile-status">"Living the dream..."</div>
+                <div class="profile-name-left">Gr3g0LLy FeLipe<br>franca</div>
+                <div class="profile-basic-info">
+                    masculino, solteiro(a)<br>
+                    tangara da serra,<br>
+                    Brasil
+                </div>
+
+                <div class="left-actions">
+                    <a href="#" class="add-friend-link"><span class="icon">👤+</span> amigo</a>
+                    <a href="#" class="more-link">mais »</a>
+                </div>
             </div>
 
-            <div class="box nav-menu">
-                <ul>
-                    <li><a href="#">profile</a></li>
-                    <li><a href="#">scrapbook</a> (12)</li>
-                    <li><a href="#">photos</a> (45)</li>
-                    <li><a href="#">videos</a> (2)</li>
+            <div class="box nav-menu-box">
+                <ul class="nav-menu">
+                    <li class="active"><a href="#"><span class="icon">👤</span> perfil</a></li>
+                    <li><a href="#"><span class="icon">📝</span> recados</a></li>
+                    <li><a href="#"><span class="icon">📷</span> fotos</a></li>
+                    <li><a href="#"><span class="icon">🎥</span> vídeos</a></li>
+                    <li><a href="#"><span class="icon">💬</span> depoimentos</a></li>
                 </ul>
+            </div>
+        </div>
+
+        <!-- Center Column -->
+        <div id="center-column">
+            <div class="center-content">
+                <h1 class="profile-title">Gr3g0LLy FeLipe franca</h1>
+
+                <div class="stats-bar">
+                    <div class="stat-item"><span class="stat-label">recados</span><br><span class="icon">📝</span> <span class="stat-value">114</span></div>
+                    <div class="stat-item"><span class="stat-label">fotos</span><br><span class="icon">📷</span> <span class="stat-value">0</span></div>
+                    <div class="stat-item"><span class="stat-label">vídeos</span><br><span class="icon">🎥</span> <span class="stat-value">5</span></div>
+                    <div class="stat-item"><span class="stat-label">fãs</span><br><span class="icon">⭐</span> <span class="stat-value">15</span></div>
+
+                    <div class="stat-item rating-item"><span class="stat-label">confiável</span><br><span class="rating-icon">😃😃😃</span></div>
+                    <div class="stat-item rating-item"><span class="stat-label">legal</span><br><span class="rating-icon">🧊🧊🧊</span></div>
+                    <div class="stat-item rating-item"><span class="stat-label">sexy</span><br><span class="rating-icon">❤️❤️❤️</span></div>
+                </div>
+
+                <div class="section-header">social</div>
+
+                <table class="info-table">
+                    <tr><td class="label">relacionamento:</td><td class="value">solteiro(a)</td></tr>
+                    <tr><td class="label">aniversário:</td><td class="value">21 março</td></tr>
+                    <tr><td class="label">idade:</td><td class="value">20</td></tr>
+                    <tr><td class="label">interesses no orkut:</td><td class="value">amigos, companheiros para atividades, namoro (mulheres)</td></tr>
+                    <tr><td class="label">quem sou eu:</td><td class="value">nao sei tentando descobri! o>O as vezes so retardado as vezes chato pra cacete as vezes legl</td></tr>
+                    <tr><td class="label">filhos:</td><td class="value">não</td></tr>
+                    <tr><td class="label">etnia:</td><td class="value">caucasiano (branco)</td></tr>
+                    <tr><td class="label">humor:</td><td class="value">extrovertido/extravagante</td></tr>
+                    <tr><td class="label">orientação sexual:</td><td class="value">heterossexual</td></tr>
+                    <tr><td class="label">estilo:</td><td class="value">urbano</td></tr>
+                    <tr><td class="label">fumo:</td><td class="value">não</td></tr>
+                    <tr><td class="label">bebo:</td><td class="value">não</td></tr>
+                    <tr><td class="label">animais de estimação:</td><td class="value">não gosto de animais de estimação</td></tr>
+                    <tr><td class="label">moro:</td><td class="value">com meus pais</td></tr>
+                    <tr><td class="label">cidade natal:</td><td class="value">tangara da serra</td></tr>
+                    <tr><td class="label">página web:</td><td class="value"><a href="#">http://ryl2phoenix.com/</a></td></tr>
+                    <tr><td class="label">paixões:</td><td class="value">nada lol</td></tr>
+                    <tr><td class="label">esportes:</td><td class="value">nenhum =S</td></tr>
+                    <tr><td class="label">atividades:</td><td class="value">lol n tenh XD</td></tr>
+                </table>
             </div>
         </div>
 
         <!-- Right Column -->
         <div id="right-column">
-
-            <div class="box profile-info">
-                <h3>profile</h3>
-                <div class="info-row"><span class="label">social:</span> ★★★</div>
-                <div class="info-row"><span class="label">trustworthy:</span> 😃😃</div>
-                <div class="info-row"><span class="label">cool:</span> 🧊🧊🧊</div>
-
-                <hr>
-
-                <div class="info-row"><span class="label">name:</span> John Doe</div>
-                <div class="info-row"><span class="label">location:</span> New York, USA</div>
-                <div class="info-row"><span class="label">relationship status:</span> Single</div>
-            </div>
-
-            <div class="box grid-container">
-                <h3>friends (150) <a href="#" class="view-all">view all</a></h3>
+            <div class="box right-box">
+                <h3 class="box-title">amigos (51)</h3>
                 <div class="grid">
-                    <div class="grid-item"><div class="avatar"></div>User</div>
-                    <div class="grid-item"><div class="avatar"></div>User</div>
-                    <div class="grid-item"><div class="avatar"></div>User</div>
-                    <div class="grid-item"><div class="avatar"></div>User</div>
-                    <div class="grid-item"><div class="avatar"></div>User</div>
-                    <div class="grid-item"><div class="avatar"></div>User</div>
+                    <div class="grid-item"><div class="avatar"></div><a href="#">..??Priscilaaa??..</a><br>(485)</div>
+                    <div class="grid-item"><div class="avatar"></div><a href="#">..°•..°Natália</a><br>(338)</div>
+                    <div class="grid-item"><div class="avatar"></div><a href="#">Ewerton</a><br>(103)</div>
+                    <div class="grid-item"><div class="avatar"></div><a href="#">•juʑµmαkî sákµяą</a><br>(482)</div>
+                    <div class="grid-item"><div class="avatar"></div><a href="#">-Tayane</a><br>(365)</div>
+                    <div class="grid-item"><div class="avatar"></div><a href="#">Murilo</a><br>(99)</div>
+                    <div class="grid-item"><div class="avatar"></div><a href="#">- Larissa</a><br>(600)</div>
+                    <div class="grid-item"><div class="avatar"></div><a href="#">Ramon</a><br>(584)</div>
+                    <div class="grid-item"><div class="avatar"></div><a href="#">Katsue</a><br>(52)</div>
                 </div>
+                <div class="box-footer"><a href="#">ver todos</a></div>
             </div>
 
-            <div class="box grid-container">
-                <h3>communities (42) <a href="#" class="view-all">view all</a></h3>
+            <div class="box right-box">
+                <h3 class="box-title">comunidades (313)</h3>
                 <div class="grid">
-                    <div class="grid-item"><div class="avatar"></div>Community</div>
-                    <div class="grid-item"><div class="avatar"></div>Community</div>
-                    <div class="grid-item"><div class="avatar"></div>Community</div>
-                    <div class="grid-item"><div class="avatar"></div>Community</div>
-                    <div class="grid-item"><div class="avatar"></div>Community</div>
-                    <div class="grid-item"><div class="avatar"></div>Community</div>
+                    <div class="grid-item"><div class="avatar"></div><a href="#">As Ninjas de</a></div>
+                    <div class="grid-item"><div class="avatar"></div><a href="#">Só faco</a></div>
+                    <div class="grid-item"><div class="avatar"></div><a href="#">Anime-Sai</a></div>
                 </div>
             </div>
-
-            <div class="box scraps">
-                <h3>scrapbook <a href="#" class="view-all">view all</a></h3>
-                <div class="scrap">
-                    <div class="scrap-author"><a href="#">Jane Smith</a></div>
-                    <div class="scrap-content">Hey! Long time no see. How have you been?</div>
-                    <div class="scrap-date">yesterday</div>
-                </div>
-                <div class="scrap">
-                    <div class="scrap-author"><a href="#">Mike Johnson</a></div>
-                    <div class="scrap-content">Happy birthday man! Have a good one!</div>
-                    <div class="scrap-date">3 days ago</div>
-                </div>
-            </div>
-
         </div>
-    </div>
-
-    <div id="footer">
-        &copy; 2008 Google - <a href="#">About orkut</a> - <a href="#">Blog</a> - <a href="#">Developers</a> - <a href="#">Privacy</a> - <a href="#">Terms</a>
     </div>
 </body>
 </html>
